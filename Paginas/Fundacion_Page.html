@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
 
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f3f4f6;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .login {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    input {
+      width: 250px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 250px;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #mensaje {
+      font-weight: bold;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login">
+    <h1>Iniciar sesión</h1>
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Contraseña"
+    >
+
+    <button onclick="verificar()">
+      Entrar
+    </button>
+
+    <p id="mensaje"></p>
+  </div>
+
+  <script>
+    function verificar() {
+      const password = document.getElementById("password").value;
+      const mensaje = document.getElementById("mensaje");
+
+      if (password === "Rai2026") {
+        mensaje.textContent = "✅ Acceso concedido";
+        mensaje.style.color = "green";
+
+        // Redirige a index.html después de 1 segundo
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000);
+
+      } else {
+        mensaje.textContent = "❌ Contraseña incorrecta";
+        mensaje.style.color = "red";
+      }
+    }
+
+    // Permite iniciar sesión presionando Enter
+    document.getElementById("password").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        verificar();
+      }
+    });
+  </script>
+
+</body>
+</html>
