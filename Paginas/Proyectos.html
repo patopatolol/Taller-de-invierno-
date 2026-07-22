@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+     <!-- Inicio de prueba menu -->
+    <header>
+        <div class="menu">
+            <h1>aqui va una foto</h1>
+            <img src="logo.png" alt="Logo"><!-- aqui va una foto-->
+            <nav>
+            <ul> <!-- creo una lista-->
+                <li><a href="../index.html">Volver</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fin de prueba menu -->
+    <!-- Inicio de prueba modelo -->
+        <main>
+            <section>
+                <h1>Prueba de pagina</h1>
+                <p>Esta es una prueba para ver si la pagina funciona bien</p>
+                <model-viewer
+                    src="../Modelos/modelo.glb"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+        
+                ></model-viewer>
+            </section>
+        <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+        </script>
+    <!-- Fin de prueba modelo -->
+</body>
+</html>
