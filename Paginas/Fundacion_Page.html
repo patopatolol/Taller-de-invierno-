@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Fundación - Login</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <h1>Prueba de pagina</h1>
-                <p>Esta es una prueba para ver si la pagina funciona bien</p>
-
     <div class="login">
         <h1>Iniciar sesión</h1>
 
-        <input
-            type="password"
-            id="password"
-            placeholder="Contraseña"
-        >
+        <form onsubmit="verificar(event)">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+            >
 
-        <button onclick="verificar()">
-            Entrar
-        </button>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Contraseña"
+                required
+            >
+
+            <button type="submit">Entrar</button>
+        </form>
 
         <p id="mensaje"></p>
     </div>
