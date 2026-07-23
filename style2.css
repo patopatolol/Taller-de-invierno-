@@ -1,1 +1,39 @@
-ss
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f2f5;
+    }
+    .contenedor-carrusel {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .carrusel {
+      display: flex;
+      width: 300%; /* El 100% por cada una de las 3 imágenes */
+      animation: desplazamiento 12s infinite ease-in-out;
+    }
+    .carrusel img {
+      width: 33.333%;
+      height: 400px;
+      object-fit: cover;
+    }
+    @keyframes desplazamiento {
+      0% { transform: translateX(0); }
+      30% { transform: translateX(0); }
+      35% { transform: translateX(-100%); }
+      65% { transform: translateX(-100%); }
+      70% { transform: translateX(-200%); }
+      95% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
