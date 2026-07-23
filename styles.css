@@ -1,10 +1,21 @@
+/* !======================================================== */
+/* ! FUENTES */
+/* !======================================================== */
+
 @font-face {
     font-family: 'Veteran';
     src: url('fonts/Veteran.ttf') format('truetype');
     font-family: 'CascadiaCode';
     src: url('fonts/CascadiaCode.ttf') format('truetype');
 }
-/*defaults*/
+/*!===================================*/
+/*!            default                  */
+/*! =================================== */
+
+/* !======================================================== */
+/* ! VARIABLES */
+/* !======================================================== */
+
 :root{
     /*Colores*/
     --primary-color: rgb(156, 10, 29);
@@ -17,9 +28,9 @@
     --fuente-titulos: "CascadiaCode", sans-serif;
 
     /* Tamaños */
-    --titulo: 3rem;
-    --subtitulo: 2rem;
-    --texto: 0.7rem;
+    --titulo: 4.58rem;
+    --subtitulo: 2.5rem;
+    --texto: 1.33rem;
 
     /* Bordes */
     --radio: 12px;
@@ -43,7 +54,9 @@
     padding-top: 120px;
     
 }
-/*fin defaults*/
+/*!===================================*/
+/*!            default                  */
+/*! =================================== */
 .modelo-seccion {
     display: flex;
     align-items: center;
@@ -83,6 +96,11 @@ model-viewer {
     text-align: left;
     font-size: var(--texto);
 }
+
+/* !======================================================== */
+/* ! ANIMACIONES */
+/* !======================================================== */
+
 /* animaciones */
 @keyframes aparecer {
     from {
@@ -97,6 +115,11 @@ model-viewer {
 }
 /*fin animaciones*/
 /*Inicio de index*/
+
+/* !======================================================== */
+/* ! BODY */
+/* !======================================================== */
+
 body{
    
     font-family: 'CascadiaCode', monospace;
@@ -111,6 +134,11 @@ model-viewer{
     margin: 0;
     box-sizing: border-box;
 } 
+
+/* !======================================================== */
+/* ! HEADER Y NAVEGACIÓN */
+/* !======================================================== */
+
 header{ 
     
     background-color: var(--primary-color); 
@@ -223,7 +251,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 0rem 1.5rem; /* Ajusta estos valores */
+    padding: 0rem 0.6rem; /* Ajusta estos valores */
     text-decoration: none;
     color: var(--text-color);
     font-size: var(--texto);
@@ -277,6 +305,11 @@ nav ul li a:hover{
 
 
 /*fin de index*/
+
+/* !======================================================== */
+/* ! TARJETAS */
+/* !======================================================== */
+
 /* Tarjetas */
 .contenedor{
     display: flex;
@@ -304,6 +337,11 @@ nav ul li a:hover{
     display: block;
     transition: .5s;
 }
+
+
+/* !======================================================== */
+/* ! FORMULARIOS */
+/* !======================================================== */
 
 .ISeccion{
    border: 90px solid #d3919100;  
@@ -366,6 +404,11 @@ nav ul li a:hover{
     cursor: pointer;
     margin-top: 1rem;
 }
+
+/* !======================================================== */
+/* ! COLLAR */
+/* !======================================================== */
+
 /*Inicio de collar*/
 .caja-descriptiva{
     display: flex;
