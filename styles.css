@@ -1,21 +1,25 @@
 @font-face {
     font-family: 'Veteran';
     src: url('fonts/Veteran.ttf') format('truetype');
+    font-family: 'CascadiaCode';
+    src: url('fonts/CascadiaCode.ttf') format('truetype');
 }
 /*defaults*/
 :root{
     /*Colores*/
-    --primary-color: #350000;
+    --primary-color: rgb(156, 10, 29);
     --secondary-color: #740000;
+    --tertiary-color: #adf1fc;
     --text-color: #ffffff;
-    --background-color: #d39191;
-    --fuente-principal: "Poppins", sans-serif;
-    --fuente-titulos: "Montserrat", sans-serif;
+    --text-color-secondary: #000000;
+    --background-color: #ffffff;
+    --fuente-principal: "Veteran", sans-serif;
+    --fuente-titulos: "CascadiaCode", sans-serif;
 
     /* Tamaños */
     --titulo: 3rem;
     --subtitulo: 2rem;
-    --texto: 1rem;
+    --texto: 0.7rem;
 
     /* Bordes */
     --radio: 12px;
@@ -23,10 +27,33 @@
     /* Sombras */
     --sombra: 0 10px 25px rgba(0,0,0,.2);
 }
+.Titulo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    animation: aparecer 1s ease forwards;
+    text-decoration: none;
+    color: var(--primary-color);
+}
 /*fin defaults*/
+/* animaciones */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*fin animaciones*/
+/*Inicio de index*/
 body{
    
-    font-family: 'Veteran', monospace;
+    font-family: 'CascadiaCode', monospace;
+    
 } 
 model-viewer{
     width:500px;
@@ -39,49 +66,82 @@ model-viewer{
 } 
 header{ 
     
-    background-color: #350000; 
+    background-color: var(--primary-color); 
     width: 100%;
-    color: rgb(248, 250, 250);
+    color: var(--text-color);
     clear: both;
     content: "";
     display: table;
-  
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 900;
+
 }
 .menu{
     width: 100%;
-    margin:  5px auto;
+    height: 1rem auto ;
+    margin:  2rem auto;
+    margin-left: 1rem; /* ancho del logo + separación */
+    align-items: right;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
 }
-img{
-    width: 40px;
-    height: 1px;
-    float: left;
-    padding: 10px;
+.Logo {
+    width: 10%;
+    position: absolute;
+    left: 4%;
+    top: 0rem;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+.nosotros-img {
+    width: 100%;
+    height: auto;
+    display: flexbox;
+    right: 0%;
+    
+}
+.destacado {
+    color: var(--primary-color);
+}
+.caja-texto {
+    width: 80%;            /* ancho del cuadro */
+    min-height: 300px;     /* altura del cuadro */
+    margin: 50px auto;     /* lo centra */
+    padding: 40px;         /* espacio entre borde y texto */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul li{
-    margin-left: 20px;
+
+nav ul li {
+    margin-left: 1rem;
     list-style: none;
-    padding: 10px;
     float: left;
     position: relative;
+    padding: 0;
 }
-nav ul li a{
-    text-decoration: none;
-    color: rgb(187, 145, 158);
-    font-size: 20px;
-    position: relative;
+
+nav ul li a {
     display: block;
-    padding: 10px 20px;
+    padding: 0rem 1.5rem; /* Ajusta estos valores */
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--texto);
 }
 nav ul li a::before{
     content: "";
     position: absolute;
 
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     background: white;
 
-    top: -15px;
+    top: 1rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -93,12 +153,43 @@ nav ul li a:hover{
     background-color: #740000;
    
 }
+.iconos{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    object-fit: cover;
+    padding: 100px; 
+    gap: 20%;
+    color: var(--primary-color);
+    
+}
+.caja-texto p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+.caja-texto-footer {
+    width: 100%;            /* ancho del cuadro */
+    min-height: 10rem;     /* altura del cuadro */
+    padding: 40px; 
+    background-color: var(--primary-color);        /* espacio entre borde y texto */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+
+/*fin de index*/
+/* Tarjetas */
 .contenedor{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 5rem;
     margin-top: 50px;
     flex-wrap: wrap;
+    z-index: 500;
 }
 
 .tarjeta{
