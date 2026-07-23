@@ -35,7 +35,45 @@
     text-decoration: none;
     color: var(--primary-color);
 }
+.Titulo_B{
+    color: var(--text-color);
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    padding-top: 120px;
+    
+}
 /*fin defaults*/
+.modelo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px;
+
+}
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+model-viewer {
+    width: 50px;
+    height: 50px;
+}
+
+
+.caja-descriptiva {
+    width: 40rem;
+    padding: 4rem;
+    background-color: rgb(216, 216, 216);
+    border-radius: 2rem;
+    text-align: left;
+    font-size: var(--texto);
+}
 /* animaciones */
 @keyframes aparecer {
     from {
@@ -88,6 +126,10 @@ header{
     display: flex;
     justify-content: flex-end;
 }
+.destacado-menu{/*/* Estilo para el elemento destacado en el menú, cuando uno este en la pagina*/
+    background-color: var(--secondary-color);
+    color: white;
+}
 .Logo {
     width: 10%;
     position: absolute;
@@ -103,10 +145,10 @@ header{
     right: 0%;
     
 }
-.destacado {
+.destacado{
     color: var(--primary-color);
 }
-.caja-texto {
+.caja-texto{
     width: 80%;            /* ancho del cuadro */
     min-height: 300px;     /* altura del cuadro */
     margin: 50px auto;     /* lo centra */
@@ -115,8 +157,52 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.caja-texto-Titulos {
+    display: block;
+    padding-top: 120px;
+    width: 100%;   
+    padding: 2rem;         /* ancho del cuadro */
+    min-height: 100px;     /* altura del cuadro */
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+.caja-materiales, .otra-caja {
+    width: 600px;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    margin: 50px auto;
+    font-size: var(--texto);
+    
 }
 
+.caja-materiales h2 {
+    text-align: center;
+    font-size: var(--subtitulo);
+}
+
+* h3 {
+    margin-top: 30px;
+    color: #740000;
+}
+
+.caja-materiales ul {
+    padding-left: 25px;
+}
+
+.caja-materiales li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.Cajas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
 
 nav ul li {
     margin-left: 1rem;
@@ -273,5 +359,9 @@ nav ul li a:hover{
 }
 /*Inicio de collar*/
 .caja-descriptiva{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
 }

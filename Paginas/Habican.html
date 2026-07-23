@@ -3,9 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Habican</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scipt.js"></script>
 </head>
+
 <body>
+
+<!-- Inicio de menu -->
+<header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="../index.html#nosotros">Nosotros</a></li>
+                <li><a href="../index.html#que-hacemos">Qué hacemos?</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="#">Fundaciones</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="Quienes-nos-cuidan.html">Quienes nos cuidan</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <img class="Logo" src="../Fotos/logo-Fundacion.png" alt="Logo">
+</header>
+
+<!-- Titulo -->
+ <div class="caja-texto-Titulos">
+<h1 class="Titulo_B">Habican</h1>
+
+</div>
+<!-- Modelo + texto -->
+<main>
+    <div class="modelo-seccion">
+
+        <section>
+            <model-viewer
+                src="../Modelos/modelo.glb"
+                camera-controls
+                auto-rotate
+                shadow-intensity="1">
+            </model-viewer>
+        </section>
+
+
+        <p class="caja-descriptiva">
+            El proyecto HABICAN consiste en un objeto multifuncional y fácil de trasladar, <br>
+            diseñado para responder a las necesidades de las personas en situación de calle que conviven con sus mascotas.  <br>
+            La propuesta integra dos funciones principales, por un lado, un refugio seguro para el animal y, por otro, <br>
+            un espacio de descanso para la persona. El diseño conserva el concepto de cubierta tipo abanico, <br>
+            permitiendo abrirla completamente o de manera parcial según las condiciones climáticas. De este modo,  <br>
+            un único sistema reúne las funciones de transporte, resguardo y descanso, reduciendo la cantidad de elementos que la persona debe trasladar.
+        </p>
+        </div>
+     <h2 class="Titulo">Materiales</h2>
+    <div class="Cajas" id="Materiales">
+    <div class="caja-materiales">
+
+    <h3>Estructura de la base</h3> <br>
+    <ul>
+        <li>6 listones de madera 2x2 / 320 x 4,5 cm</li>
+        <li>1 tabla de MDF 70 x 25 cm</li>
+        <li>1 tabla de MDF 70 x 82 cm</li>
+        <li>2 tubos de PVC 20 mm - 33 cm</li>
+        <li>Tela impermeable silver 1.5 x 7 m</li>
+        <li>2 ruedas</li>
+        <li>40 tornillos aprox. - 8 cm</li>
+        <li>10 tornillos aprox. - 2 cm</li>
+        <li>4 bisagras metálicas</li>
+        <li>4 escuadras de 10 x 7 cm</li>
+        <li>Cinta de alta densidad - 1 m</li>
+        <li>3 hebillas de liberación rápida</li>
+    </ul>
+    </div>
+    <div class="otra-caja">
+
+    <h3>Estructura del techo "abanico"</h3><br>
+    <ul>
+        <li>10 tubos de PVC 20 mm - 103 cm</li>
+        <li>5 tubos de PVC 20 mm - 70 cm</li>
+        <li>10 codos de PVC 20 mm</li>
+        <li>4 pernos + tuerca</li>
+        <li>4 piezas de madera</li>
+    </ul>
+
+</div>
+</div>
+</main>
+<div>
+    <button class="btn" >
+    <a href="../index.html#nosotros">Nuestra comunidad</a>
+    </button>
+</div>
+
+<script 
+type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
 
 </body>
 </html>
