@@ -522,7 +522,16 @@ nav ul li a:hover{
     width: 500px; /* tamaño del cuadrado */
     height: 600px; /* tamaño del cuadrado */
 }
+.flecha{
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--primary-color);
+}
 
+.flecha:hover{
+    opacity: 0.7;
+}
 
 .imagenes{
     display: flex;
