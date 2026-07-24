@@ -11,7 +11,7 @@ let imagenes = [
     },
     {
         "url": "../Fotos/comedores.jpg",
-        "nombre": "Comdedores comunitarios",
+        "nombre": "Comedores comunitarios",
         "descripcion": "Un plato de comida puede cambiar un día. En nuestro comedor compartimos alimentos, apoyo y esperanza para que más personas encuentren un lugar donde sentirse acompañadas y escuchadas."
     }
 ];

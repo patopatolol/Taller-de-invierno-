@@ -57,7 +57,7 @@
     padding-top: 120px;
     font-style: var(--fuente-titulos);
     font-weight: bold;
-    background-color: ;
+
     
 }
 /*!===================================*/
@@ -477,7 +477,6 @@ nav ul li a:hover{
     margin-top: 1rem;
     text-decoration: none;
     color: inherit;
-    align-content: ;
     display: flex;
     justify-content: flex-end;
     display: block;
@@ -555,6 +554,7 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-style: var(--fuentes-texto);
 
     border-radius: 15px;
     overflow: hidden;
@@ -622,7 +622,6 @@ nav ul li a:hover{
     height: 220px;
 
     object-fit: cover;
-    align-items: ;
 
     border-radius: 15px;
 }
@@ -643,7 +642,6 @@ nav ul li a:hover{
     height: 500px;
 
     object-fit: cover;
-    align-items: ;
 
     border-radius: 15px;
 }
