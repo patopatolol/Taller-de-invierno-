@@ -21,6 +21,7 @@
     --primary-color: rgb(156, 10, 29);
     --secondary-color: #740000;
     --tertiary-color: #adf1fc;
+    --Color-palo:#c2c2c262;
     --text-color: #ffffff;
     --text-color-secondary: #000000;
     --background-color: #ffffff;
@@ -56,17 +57,20 @@
     padding-top: 120px;
     font-style: var(--fuente-titulos);
     font-weight: bold;
+    background-color: ;
     
 }
 /*!===================================*/
 /*!            default                  */
 /*! =================================== */
+
+}
 .modelo-seccion {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
-    padding: 50px;
+    gap: 0px;
+    padding: 0px;
 
 }
 .oculto {
@@ -87,18 +91,29 @@
     
 }
 model-viewer {
-    width: 50px;
-    height: 50px;
+    width: 50rem;
+    height: 200rem;
 }
 
 
 .caja-descriptiva {
-    width: 40rem;
-    padding: 4rem;
+    width: 60rem;
+    padding: 1rem;
     background-color: rgb(216, 216, 216);
     border-radius: 2rem;
     text-align: left;
+    margin-left:auto;
     font-size: var(--texto);
+    font-style: var(--fuentes-texto);
+}
+.caja-descriptiva2{
+    width: 60rem;
+    padding: 1rem;
+    background-color: rgb(216, 216, 216);
+    border-radius: 2rem;
+    text-align: left;
+    margin-left:auto;
+    font-size: 20px;
     font-style: var(--fuentes-texto);
 }
 
@@ -190,7 +205,7 @@ header{
     color: var(--primary-color);
 }
 .caja-texto{
-    width: 80%;            /* ancho del cuadro */
+    width: 100%;            /* ancho del cuadro */
     min-height: 40%;     /* altura del cuadro */
     margin: 50px auto;     /* lo centra */
     padding: 10px;         /* espacio entre borde y texto */
@@ -198,9 +213,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #bebebe2d;
-    
+    background-color: var(--Color-palo);  
+    font-size: 18px;
 }
+
 .caja-texto-Titulos {
     display: block;
     padding-top: 120px;
@@ -227,9 +243,10 @@ header{
 }
 
 * h3 {
-    margin-top: 30px;
+    margin-top: 5rem;
     color: #740000;
 }
+
 
 .caja-materiales ul {
     padding-left: 25px;
@@ -244,6 +261,7 @@ header{
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
+    border-color: #adf1fc;
 }
 
 nav ul li {
@@ -292,8 +310,8 @@ nav ul li a:hover{
     
 }
 .caja-texto p {
-    font-size: var(--fuentes-subtitulos);
-    line-height: 1.8;
+    font-size: var(--fuente-titulos);
+    line-height: 2.8;
     text-align: center;
 }
 .caja-texto-footer {
@@ -310,6 +328,32 @@ nav ul li a:hover{
 
 
 /*fin de index*/
+/* !======================================================== */
+/* ! Tablas */
+/* !======================================================== */
+
+/* tabla de materiales */
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    
+
+   
+
+    
+}
+
+.tabla th,
+.tabla td{
+    border: none;                  /* Quita todos los bordes */
+    border-bottom: 2px solid var(--primary-color); /* Solo deja la línea inferior */
+    padding: 12px;
+}
+.tabla th{
+    background-color: var(--primary-color);
+    color: white;
+}
+
 
 /* !======================================================== */
 /* ! TARJETAS */
@@ -324,7 +368,6 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    c
 
 
 }
@@ -421,6 +464,26 @@ nav ul li a:hover{
     margin-bottom: 1rem;
     cursor: pointer;
     margin-top: 1rem;
+}
+.btn2{
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    width: 50%;
+    height: 40px;
+    transition: .3s;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: inherit;
+    align-content: ;
+    display: flex;
+    justify-content: flex-end;
+    display: block;
+    margin-left: auto;
+
+
 }
 
 /* !======================================================== */
@@ -521,3 +584,97 @@ nav ul li a:hover{
     color: var(--primary-color);
 }
 /*menu deslizable*/
+/* !======================================================== */
+/* ! Carnet */
+/* !======================================================== */
+.Contenedor-Carnet{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.carnet{
+    width: 700px;
+    display: flex;
+    gap: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.carnet2{
+    width: 500px;
+    display: flex;
+    gap: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.carnet2 img{
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+    align-items: ;
+
+    border-radius: 15px;
+}
+.carnet3{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.carnet3 img{
+    width: 1000px;
+    height: 500px;
+
+    object-fit: cover;
+    align-items: ;
+
+    border-radius: 15px;
+}
+.carnet img{
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    flex: 1;
+}
+
+.info h2{
+    margin: 0 0 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.info p{
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+.Icon{
+    height: 1%;
+    width: 1%;
+}

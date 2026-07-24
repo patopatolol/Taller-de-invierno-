@@ -1,18 +1,18 @@
 let imagenes = [
     {
-        "url": "../Fotos/qr.png",
-        "nombre": "Proyecto 01",
-        "descripcion": "comida"
+        "url": "../Fotos/Voluntariados.jpeg",
+        "nombre": "Voluntariados ",
+        "descripcion": "Creemos que ayudar puede cambiar vidas. Por eso, conectamos personas con ganas de hacer la diferencia a través de voluntariados presenciales y televoluntariados. Nuestra misión es fortalecer comedores comunitarios y llevar más apoyo a quienes lo necesitan. Sumate y sé parte del cambio."
     },
     {
-        "url": "../Fotos/habican.png",
-        "nombre": "Proyecto 02",
-        "descripcion": "dinero"
+        "url": "../Fotos/Donaciones.jpg",
+        "nombre": "Recibimos Donaciones",
+        "descripcion": "Cada donación genera un impacto real. Con tu apoyo fortalecemos nuestros comedores comunitarios y llevamos alimentos, acompañamiento y esperanza a quienes más lo necesitan. Súmate al cambio y dona hoy."
     },
     {
-        "url": "../Fotos/thor.jpg",
-        "nombre": "Proyecto 03",
-        "descripcion": "mucho dineromucho dineromucho"
+        "url": "../Fotos/comedores.jpg",
+        "nombre": "Comdedores comunitarios",
+        "descripcion": "Un plato de comida puede cambiar un día. En nuestro comedor compartimos alimentos, apoyo y esperanza para que más personas encuentren un lugar donde sentirse acompañadas y escuchadas."
     }
 ];
 
