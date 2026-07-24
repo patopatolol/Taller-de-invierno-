@@ -12,7 +12,7 @@ let imagenes = [
     {
         "url": "../Fotos/thor.jpg",
         "nombre": "Proyecto 03",
-        "descripcion": "mucho dineromucho dineromucho dineromucho dineromucho dinero"
+        "descripcion": "mucho dineromucho dineromucho"
     }
 ];
 

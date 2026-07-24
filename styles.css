@@ -3,10 +3,10 @@
 /* !======================================================== */
 
 @font-face {
-    font-family: 'Veteran';
-    src: url('fonts/Veteran.ttf') format('truetype');
+    font-family: 'FormaEx';
+    src: url(Fonts/FormaDJRMicro-ExtraBoldItalic-Testing.otf) format('truetype');
     font-family: 'CascadiaCode';
-    src: url('fonts/CascadiaCode.ttf') format('truetype');
+    src: url(Fonts/CascadiaMonoNF.ttf) format('truetype');
 }
 /*!===================================*/
 /*!            default                  */
@@ -24,13 +24,14 @@
     --text-color: #ffffff;
     --text-color-secondary: #000000;
     --background-color: #ffffff;
-    --fuente-principal: "Veteran", sans-serif;
-    --fuente-titulos: "CascadiaCode", sans-serif;
+    --fuente-titulos: "FormaEx", sans-serif;
+    --fuentes-subtitulos:"CascadiaCode";
+    --fuentes-texto:"CascadiaCode";
 
     /* Tamaños */
-    --titulo: 4.58rem;
-    --subtitulo: 2.5rem;
-    --texto: 1.33rem;
+    --titulo: 3.8rem;
+    --subtitulo: 1.9rem;
+    --texto: 0.8rem;
 
     /* Bordes */
     --radio: 12px;
@@ -45,6 +46,7 @@
     animation: aparecer 1s ease forwards;
     text-decoration: none;
     color: var(--primary-color);
+    font-style: var(--fuente-titulos);
 }
 .Titulo_B{
     color: var(--text-color);
@@ -52,6 +54,8 @@
     text-align: center;
     display: block;
     padding-top: 120px;
+    font-style: var(--fuente-titulos);
+    font-weight: bold;
     
 }
 /*!===================================*/
@@ -95,6 +99,7 @@ model-viewer {
     border-radius: 2rem;
     text-align: left;
     font-size: var(--texto);
+    font-style: var(--fuentes-texto);
 }
 
 /* !======================================================== */
@@ -121,8 +126,7 @@ model-viewer {
 /* !======================================================== */
 
 body{
-   
-    font-family: 'CascadiaCode', monospace;
+    font-style: var(--fuentes-texto); 
     
 } 
 model-viewer{
@@ -187,13 +191,14 @@ header{
 }
 .caja-texto{
     width: 80%;            /* ancho del cuadro */
-    min-height: 300px;     /* altura del cuadro */
+    min-height: 40%;     /* altura del cuadro */
     margin: 50px auto;     /* lo centra */
-    padding: 40px;         /* espacio entre borde y texto */
+    padding: 10px;         /* espacio entre borde y texto */
 
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #bebebe2d;
     
 }
 .caja-texto-Titulos {
@@ -242,7 +247,7 @@ header{
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin-left: 0.1rem;
     list-style: none;
     float: left;
     position: relative;
@@ -251,10 +256,10 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 0rem 0.6rem; /* Ajusta estos valores */
+    padding: 0rem 0.5rem; /* Ajusta estos valores */
     text-decoration: none;
     color: var(--text-color);
-    font-size: var(--texto);
+    font-size: var(--fuente-titulos);
 }
 nav ul li a::before{
     content: "";
@@ -287,7 +292,7 @@ nav ul li a:hover{
     
 }
 .caja-texto p {
-    font-size: 20px;
+    font-size: var(--fuentes-subtitulos);
     line-height: 1.8;
     text-align: center;
 }
@@ -311,6 +316,18 @@ nav ul li a:hover{
 /* !======================================================== */
 
 /* Tarjetas */
+.targeta-anima{
+    width: 100%;
+    height: 100%; /* altura fija del texto */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    c
+
+
+}
 .contenedor{
     display: flex;
     justify-content: center;
@@ -318,6 +335,7 @@ nav ul li a:hover{
     margin-top: 50px;
     flex-wrap: wrap;
     z-index: 500;
+    padding: bottom 40%;
 }
 
 .tarjeta{
@@ -369,7 +387,7 @@ nav ul li a:hover{
     color: #ffffff;
     text-align: center;
     padding: 18px;
-    font-size: 22px;
+    font-size: var(--fuente-titulos);
     font-weight: bold;
     transition: .3s;
     margin-bottom: 2rem;
@@ -379,7 +397,7 @@ nav ul li a:hover{
     text-align: center;
     margin-bottom: 2rem;
     color: #fff;
-    font-size: 16px;
+    font-size: var(--fuentes-texto);
 }
 .I-Datos{
     display: flex;
@@ -417,3 +435,89 @@ nav ul li a:hover{
     gap: 50px;
     padding: 50px;
 }
+/* !======================================================== */
+/* ! menu deslizable */
+/* !======================================================== */
+.solo-carrusel{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom:20px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px; /* tamaño del cuadrado */
+    height: 600px; /* tamaño del cuadrado */
+}
+
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.img{
+    width: 40rem;
+    height: 20rem; /* altura fija de la imagen */
+
+    object-fit: cover;
+
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.85);
+}
+
+
+.texto{
+    width: 100%;
+    height: 100%; /* altura fija del texto */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    background-color: rgba(var(--primary-color), 0.5); /*Color de fondo texto*/
+}
+
+
+/* Puntos del carrusel */
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p{ /*No seleccionado*/
+    font-size: 100px;
+    font-weight: 10px;
+    margin-top: -50px;
+    color: black;
+}
+
+.puntos .bold{ /*Seleccionado*/
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+/*menu deslizable*/
